@@ -3,102 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniel Segawa's Portfolio Website">
-    <title>Daniel Segawa's Portfolio</title>
-    
-    <!-- Link to the CSS File -->
-    <link rel="stylesheet" href="style.css"> <!-- Make sure the path is correct -->
+    <title>Your Website</title>
+    <style>
+        /* Centering the profile image */
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 50%;
+        }
+
+        /* Styling social media links */
+        .social-links a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Heading styling */
+        h1 {
+            text-align: center;
+            font-size: 32px;
+        }
+
+        /* Description section */
+        .description {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        /* Social media links container */
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my journey, projects, and more.</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#registration">Register</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am  a student in Information Systems and Technology...</p>
-    </section>
-    
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Here are some of the projects I've worked on...</p>
-    </section>
-    
-    <!-- Registration Section -->
-    <section id="registration">
-        <h2>Register Now</h2>
-        <p>Fill in your details to join our platform.</p>
-        <form>
-            <table>
-                <tr>
-                    <th>Field</th>
-                    <th>Input</th>
-                </tr>
-                <tr>
-                    <td>Full Name</td>
-                    <td><input type="text" name="fullname" placeholder="Enter your full name" required></td>
-                </tr>
-                <tr>
-                    <td>Email</td>
-                    <td><input type="email" name="email" placeholder="Enter your email" required></td>
-                </tr>
-                <tr>
-                    <td>Phone Number</td>
-                    <td><input type="tel" name="phone" placeholder="Enter your phone number" required></td>
-                </tr>
-                <tr>
-                    <td>Address</td>
-                    <td><input type="text" name="address" placeholder="Enter your address"></td>
-                </tr>
-                <tr>
-                    <td>Password</td>
-                    <td><input type="password" name="password" placeholder="Enter your password" required></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center;">
-                        <button type="submit">Register</button>
-                    </td>
-                </tr>
-            </table>
-        </form>
-    </section>
-    
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out to me.</p>
-    </section>
-    
-    <footer>
-        <p>© 2024 Daniel Segawa</p>
-    </footer>
+
+    <!-- Profile Image at the top of the page -->
+    <img src="20241027_140907.jpg" alt="My Profile Picture" width="300" height="300">
+
+    <!-- Welcome Heading -->
+    <h1>Welcome to my personal website!</h1>
+
+    <!-- Description about you -->
+    <div class="description">
+        <p>Hello! I am Daniel Segawa, a passionate individual committed to quality healthcare. I have a nursing certificate and am excited to provide exceptional services. Currently, I am also studying a Bachelor's in Information Systems and Technology. I look forward to contributing to both healthcare and technology fields!</p>
+    </div>
+
+    <!-- Information Table -->
+    <h2>My Details</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>Daniel Segawa</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>22</td>
+        </tr>
+        <tr>
+            <th>Profession</th>
+            <td>Nurse & Information Technology Student</td>
+        </tr>
+        <tr>
+            <th>Location</th>
+            <td>Uganda</td>
+        </tr>
+        <tr>
+            <th>Studies</th>
+            <td>Bachelor's in Information Systems and Technology</td>
+        </tr>
+        <tr>
+            <th>Social Media</th>
+            <td><a href="https://www.tiktok.com/@ssegawaDaniel" target="_blank">TikTok</a>, 
+                <a href="https://twitter.com/ssegawaDaniel" target="_blank">X</a>, 
+                <a href="https://www.facebook.com/ssegawaDaniel" target="_blank">Facebook</a>, 
+                <a href="https://www.youtube.com/c/ssegawaDaniel" target="_blank">YouTube</a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Social media links section -->
+    <div class="social-links">
+        <a href="https://www.tiktok.com/@ssegawaDaniel" target="_blank" title="Follow me on TikTok">TikTok</a>
+        <a href="https://twitter.com/ssegawaDaniel" target="_blank" title="Follow me on X">X (Twitter)</a>
+        <a href="https://www.facebook.com/ssegawaDaniel" target="_blank" title="Follow me on Facebook">Facebook</a>
+        <a href="https://www.youtube.com/c/ssegawaDaniel" target="_blank" title="Subscribe to my YouTube">YouTube</a>
+    </div>
+
 </body>
 </html>
-<footer>
-  <div class="social-links">
-    <a href="https://www.tiktok.com/@ssegawaDaniel" target="_blank" title="Follow me on TikTok">
-      TikTok
-    </a>
-    <a href="https://twitter.com/ssegawaDaniel" target="_blank" title="Follow me on X">
-      X (Twitter)
-    </a>
-    <a href="https://www.facebook.com/ssegawaDaniel" target="_blank" title="Follow me on Facebook">
-      Facebook
-    </a>
-    <a href="https://www.youtube.com/c/ssegawaDaniel" target="_blank" title="Subscribe to my YouTube">
-      YouTube
-    </a>
-  </div>
-</footer>
