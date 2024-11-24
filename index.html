@@ -3,58 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Registration Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
 
-    <!-- Header Section with Image -->
+    <!-- Header Section -->
     <header>
         <div class="container">
-            <h1>Event Registration</h1>
-            <p>Fill in the form below to register for the upcoming event. We are excited to have you join us!</p>
-            <img src="event-image.jpg" alt="Event Image" class="event-image">
+            <h1>Welcome to My Website</h1>
+            <p>Your one-stop platform for exciting content and features.</p>
+            <img src="20241027_140907.jpg" alt="Header Image" class="header-image">
         </div>
     </header>
 
-    <!-- Main Content Section for Registration -->
-    <section class="registration">
-        <div class="container">
-            <h2>Register Here</h2>
-            <p>Complete your registration by providing the required details in the table below:</p>
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hello! My name is Daniel Segawa. I am passionate about technology and wildlife. This website is my space to share knowledge, engage with visitors, and explore creativity!</p>
+        </section>
 
-            <!-- Registration Table -->
+        <!-- Registration Form -->
+        <section class="registration">
+            <h2>Register for Updates</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Visitor Registration Table -->
+        <section class="visitor-table">
+            <h2>Visitors Registration</h2>
             <table>
                 <thead>
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Phone Number</th>
-                        <th>Registration Date</th>
+                        <th>Contact Number</th>
+                        <th>Visit Date</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><input type="text" placeholder="Full Name" required></td>
-                        <td><input type="email" placeholder="Your Email" required></td>
-                        <td><input type="tel" placeholder="Your Phone Number" required></td>
-                        <td><input type="date" required></td>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>+123456789</td>
+                        <td>2024-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>janesmith@example.com</td>
+                        <td>+987654321</td>
+                        <td>2024-11-23</td>
                     </tr>
                 </tbody>
             </table>
-
-            <!-- Submit Button -->
-            <button class="submit-btn">Submit Registration</button>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Event Company. All rights reserved.</p>
-            <p>Contact us at: <a href="mailto:info@eventcompany.com">info@eventcompany.com</a></p>
+            <p>&copy; 2024 Daniel Segawa. All rights reserved.</p>
+            <p>Follow me on:</p>
+            <ul class="social-media">
+                <li><a href="https://www.facebook.com/ssegawa.daniel" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/ssegawa.daniel" target="_blank">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@africa_wildlife" target="_blank">TikTok</a></li>
+            </ul>
         </div>
     </footer>
 
 </body>
-</html>
+        </html>
