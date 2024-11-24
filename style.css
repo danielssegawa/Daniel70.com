@@ -1,92 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
     padding: 20px;
 }
 
-h1, h2 {
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Header Section with Image */
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 40px 0;
     text-align: center;
-    color: #333;
 }
 
-img {
-    display: block;
-    margin: 20px auto;
-    border-radius: 50%;
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
 }
 
-.about, .details, .registration, .social-links {
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.event-image {
+    width: 100%;
+    max-width: 700px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 
-.about p, .details td {
-    font-size: 18px;
+/* Registration Section */
+.registration {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
 }
 
+.registration h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.registration p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-table, th, td {
-    border: 1px solid #ddd;
-    padding: 12px;
+th, td {
+    padding: 15px;
     text-align: left;
+    border: 1px solid #ddd;
 }
 
 th {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #34495e;
+    color: #fff;
+    font-size: 1.1rem;
 }
 
-td a {
-    color: #4CAF50;
+td input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+td input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Button Styling */
+button.submit-btn {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 20px;
+}
+
+button.submit-btn:hover {
+    background-color: #2ecc71;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #1abc9c;
     text-decoration: none;
 }
 
-td a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
-/* Registration Form */
-form {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .registration h2 {
+        font-size: 2rem;
+    }
+
+    table, th, td {
+        font-size: 0.9rem;
+    }
+
+    button.submit-btn {
+        font-size: 1rem;
+    }
+
+    .event-image {
+        width: 100%;
+    }
 }
 
-form label {
-    font-size: 16px;
-}
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
 
-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
+    .registration h2 {
+        font-size: 1.8rem;
+    }
 
-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45
+    button.submit-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+        }
